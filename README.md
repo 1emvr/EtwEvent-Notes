@@ -4,7 +4,7 @@ Credit for all the reverse engineering and hard-research:
 - https://s4dbrd.com/evading-etw-based-detections/
 - https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54
     
-The four main components of the system consist of:
+## Components:
 
 - Providers - Designed to generate the events. They must register with ETW and send events using the API and register a callback function to enable/disable tracing.
 
@@ -28,6 +28,7 @@ The four main components of the system consist of:
 	The Consumer can choose to do whatever it wishes with the incoming data. This is where EDR vendors may send off alerts to their product's interface, logging or take preventative actions, sometimes cooperating with other sensors.
 
 ## High-Level Control Flow
+
 Code flow for generating ETW events can be divided as such:
 1. Operational Functions - Higher-level wrapper functions that perform an operation that interacts with Microsoft embedded Event Processing Functions.
 
