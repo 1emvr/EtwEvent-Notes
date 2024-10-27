@@ -41,7 +41,7 @@ Code flow for generating ETW events can be divided as such:
 
 ## Kernel Mode ETW
 
-There's a long list of different logging functions for ETW. I don't think I need to write them all down here, and their function names explain a lot about what they do.  `EtwTi` prepended functions are the ETW-TI sensors and `EtwTim` are mitigation sensors.
+There's a long list of different logging functions for ETW. I don't think I need to write them all down here, and their function names imply a lot about what they do.  `EtwTi` prepended functions are the ETW-TI sensors and `EtwTim` are mitigation sensors.
 
 Notable domains for ETW Event creation:
 - Logging memory allocation
