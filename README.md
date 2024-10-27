@@ -1,8 +1,8 @@
 ## Main Components of ETW
 
 Credit to:
-    https://s4dbrd.com/evading-etw-based-detections/
-    https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54
+- https://s4dbrd.com/evading-etw-based-detections/
+- https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54
     
 The four main components of the system consist of:
 
