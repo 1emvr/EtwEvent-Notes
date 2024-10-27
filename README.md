@@ -38,7 +38,6 @@ Code flow for generating ETW events can be divided as such:
 
 3.  Event Emission Function - Either `ntdll!EtwWriteUMSecurityEvent` or `nt!EtwWriteKMSecurityEvent` which will start the process of writing events to the `Microsoft-Windows-Security-Auditing Provider`
 
-Link to [Johnathan Johnson's Windows Security Auditing Spreadsheet](https://docs.google.com/spreadsheets/d/1LHBrd6XE6VhnZC6Z6otJOeHVzkRSBY7ny5VS5YJ35Kg/edit?gid=0#gid=0) with extensive mappings of process events to corresponding API calls.
 
 ## Kernel Mode ETW
 
