@@ -1,6 +1,6 @@
 ## Main Components of ETW
 
-Credit to:
+Credit for all the reverse engineering and hard-research:
 - https://s4dbrd.com/evading-etw-based-detections/
 - https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54
     
