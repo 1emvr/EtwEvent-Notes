@@ -1,6 +1,4 @@
 ## Main Components of ETW
-https://s4dbrd.com/evading-etw-based-detections/
-
 The four main components of the system consist of:
 
 - Providers - Designed to generate the events. They must register with ETW and send events using the API and register a callback function to enable/disable tracing.
@@ -39,7 +37,7 @@ Link to [Johnathan Johnson's Windows Security Auditing Spreadsheet](https://docs
 
 ## Kernel Mode ETW
 
-There's a long list of different logging functions for ETW. I don't think I need to write them all down here, and their function names explain a lot about what they do. 
+There's a long list of different logging functions for ETW. I don't think I need to write them all down here, and their function names explain a lot about what they do.  `EtwTi` prepended functions are the ETW-TI sensors and `EtwTim` are mitigation sensors.
 
 Notable domains for ETW Event creation:
 - Logging memory allocation
@@ -59,5 +57,10 @@ Notable domains for ETW Event creation:
 - Denying protection changes
 - Denied execution ("non-compliant code") from reserved memory
 - Denied execution ("non-compliant code") from mapped views
-- Low Integrity Checks on Executable Images Being Mapped
+- Low integrity checks on executable images being mapped
+- Denied direct system calls
+
+Adrián Díaz has elegantly laid-out a comprehensive map for these different calls:
+
+![[IDA_Diagram.drawio.png]]
 
