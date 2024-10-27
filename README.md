@@ -27,7 +27,7 @@ The four main components of the system consist of:
 
 	The Consumer can choose to do whatever it wishes with the incoming data. This is where EDR vendors may send off alerts to their product's interface, logging or take preventative actions, sometimes cooperating with other sensors.
 
-![](etw.png?raw=true)
+![Johnathan Johnson's overview of ETW architecture](etw.png?raw=true)
 
 ## High-Level Control Flow
 Code flow for generating ETW events can be divided as such:
@@ -64,7 +64,5 @@ Notable domains for ETW Event creation:
 - Low integrity checks on executable images being mapped
 - Denied direct system calls
 
-Johnathan Johnson has elegantly laid-out a comprehensive map for these different calls:
-
-![](IDA_Diagram.drawio.png?raw=true)
+![Johnathan Johnson's elegant layout](IDA_Diagram.drawio.png?raw=true)
 
