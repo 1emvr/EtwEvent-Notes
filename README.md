@@ -1,4 +1,9 @@
 ## Main Components of ETW
+
+Credit to:
+https://s4dbrd.com/evading-etw-based-detections/
+https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54
+    
 The four main components of the system consist of:
 
 - Providers - Designed to generate the events. They must register with ETW and send events using the API and register a callback function to enable/disable tracing.
